@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    height: 100%;
+    background-image: url(/media/life/pelirroja2.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+
+.contenedor_top_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor_top_header .contenedor_logo{
+    height: 15vh;
+    margin: 15px;
+}
+
+.contenedor_top_header .contenedor_logo .logo{
+    height: 100%;
+}
+
+
+.contenedor_navigation .navigation li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    transition: .1s;
+}
+
+.contenedor_navigation .navigation li:hover{
+    border-bottom: solid 2px #fbbcac;
+}
+
+.contenedor_navigation .navigation li a{
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.contenedor_text_header{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+}
+
+.contenedor_text_header h2{
+    width: 60%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contenedor_text_header .name{
+    text-transform: uppercase;
+}
+
+.contenedor_text_header .name_FW,
+.text_main_servicio .name_FW{
+    color: #044464;
+}
+
+.contenedor_text_header .name_FL,
+.text_main_servicio .name_FL{
+    color: #ef8484;
+}
+
+.contenedor_text_header .name_B,
+.text_main_servicio .name_B{
+    color: #fc9c04;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+main .title_main{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+main .contenedor_main_servicios{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+main .cuadrado_servicio{
+    width: 25%;
+    margin: 15px;
+    height: 100%;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .2s ease;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+main .cuadrado_servicio:hover{
+    transform: translateY(-5px);
+}
+
+main .cuadrado_servicio .imagen_main_servicio{
+    height: 200px;
+}
+
+main .cuadrado_servicio .imagen_main_servicio img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .text_main_servicio{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+main .text_main_servicio p{
+    margin: 20px 0 20px 0;
+    font-weight: 500;
+}
+
+main .cuadrado_servicio .text_main_servicio a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main .cuadrado_servicio .text_main_servicio .bottom_FW{
+    background-color: #044464;
+}
+
+main .cuadrado_servicio .text_main_servicio .bottom_FL{
+    background-color: #ef8484;
+}
+
+main .cuadrado_servicio .text_main_servicio .bottom_B{
+    background-color: #fc9c04;
+}
+
+.header_quienSoy{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/media/life/pelirroja2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f5f5f5;
+    font-size: 2rem;
+}
+
+.contenedor_contenido_quienSoy{
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor_contenido_quienSoy .contenedor_biografia,
+.contenedor_contenido_quienSoy .contenedor_trayectoria{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_contenido_quienSoy .text_biografia{
+    margin: 15px;
+    padding: 5px;
+    width: 50%;
+}
+
+.contenedor_contenido_quienSoy .text_biografia h2{
+    color: #ef8484;
+}
+
+.contenedor_contenido_quienSoy .text_biografia p{
+    font-weight: 500;
+}
+
+.contenedor_contenido_quienSoy .imagen_biografia,
+.contenedor_contenido_quienSoy .imagen_trayectoria{
+    margin: 15px;
+    width: 50%;
+    height: 300px;
+    background-image: url(/media/life/teacher\(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor_contactame{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/media/life/pelirroja2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contactame{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor_contactame .form_contacto{
+    width: 35%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px 15px 30px 15px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.contenedor_contactame .form_contacto h2{
+    margin: 5px;
+}
+
+.contenedor_contactame .form_contacto input{
+    width: 80%;
+    height: 40px;
+    margin: 15px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ebebeb;
+}
+
+.contenedor_contactame .form_contacto input:focus{
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.295);
+    border-bottom: 2px solid #ef8484;
+    outline: none;
+}
+
+.contenedor_contactame .form_contacto button{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    font-weight: 500;
+    margin: 10px;
+    background-color: #ef8484;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contenedor_contactame .o{
+    font-size: 3rem;
+    color: #f5f5f5;
+}
+
+.contenedor_contactame .contenedor_redes{
+    width: 35%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.contenedor_contactame .contenedor_redes h2,
+.contenedor_contactame .contenedor_redes p{
+    text-align: center;
+    margin: 10px;
+}
+
+.contenedor_contactame .contenedor_redes p{
+    font-weight: 500;
+}
+
+.contenedor_contactame .contenedor_redes .redes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor_contactame .contenedor_redes .redes i{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 3rem;
+    margin: 10px 0 10px 0;
+    transition: .1s ease;
+}
+
+.contenedor_contactame .contenedor_redes .redes i.fa-facebook-square{
+    color: #3B5998;
+}
+
+.contenedor_contactame .contenedor_redes .redes i.fa-twitter-square{
+    color: #08a0e9;
+}
+
+.contenedor_contactame .contenedor_redes .redes i.fa-linkedin{
+    color: #0077B5;
+}
+
+.contenedor_contactame .contenedor_redes .redes i.fa-instagram-square{
+    color: #DD2A7B;
+}
+
+
+
+.contenedor_contactame .contenedor_redes .redes i.fa-facebook-square:hover{
+    color: #f5f5f5;
+    background-color: #3B5998;
+}
+
+.contenedor_contactame .contenedor_redes .redes i.fa-twitter-square:hover{
+    color: #f5f5f5;
+    background-color: #08a0e9;
+}
+
+.contenedor_contactame .contenedor_redes .redes i.fa-linkedin:hover{
+    color: #f5f5f5;
+    background-color: #0077B5;
+}
+
+.contenedor_contactame .contenedor_redes .redes i.fa-instagram-square:hover{
+    color: #f5f5f5;
+    background-color: #DD2A7B;
+}
+
+.contenedor-footer{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    margin-top: 20px;
+}
+
+.container .title_container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container .lbl_menu{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .lbl_menu label{
+    cursor: pointer;
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 400ms ease;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+
+.container .lbl_menu .label_FW{
+    background-color: #044464;
+}
+
+.container .lbl_menu .label_FL{
+    background-color: #ef8484;
+}
+
+.container .lbl_menu .label_B{
+    background-color: #fc9c04;
+}
+
+.content{
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    visibility: hidden;
+    transform: scale(0.9);
+    padding: 30px;
+    padding-bottom: 40px;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.content .tab{
+    transition: all 600ms ease;
+}
+
+#radio1, #radio2, #radio3{
+    display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.contenedor_tab_imagen{
+    width: 50%;
+    height: 100px;
+}
+
+.tab1{
+    background-color: #044464;
+    color: #f5f5f5;
+    
+}
+
+
+
+.tab2{
+    background-color: #fbbcac;
+}
+
+.tab3{
+    background-color: #fc9c04;
+}
+
+.footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #292929;
+    color: whitesmoke;
+}
+
+.footer .columna{
+    width: 100%;
+    height: 100%;
+    margin:100px 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .columna1{
+    justify-content: center;
+}
+
+.footer .columna1 h2{
+    margin-bottom: 20px;
+    width: 75%;
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+.footer .columna1 p{
+    color: #6d6d6d;
+    width: 75%;
+    text-align: justify;
+}
+
+.footer .columna1 span p{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.footer .columna2{
+    text-align: center;
+
+
+}
+
+.footer .columna2 .logotipo-footer{
+    width: 300px;
+    margin-top: 0px;
+}
+
+.footer .columna2 h2{
+    color: #fbbcac;
+}
+
+.footer .columna2 h2::first-letter{
+    color: #fbbcac;
+}
+
+.footer .columna2 p{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+.footer .columna2 ul{
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer .columna2 ul a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer .columna2 ul li{
+    display: inline-block;
+    width: 30px;
+    padding: 15px;
+    margin: 0 10px;
+    width: 30px;
+    font-size: 2em;
+
+}
+
+.footer .columna2 ul li i{
+
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.footer .columna2 ul li:hover{
+    border-radius: 50%;
+
+}
+
+.footer .columna3 p{
+    margin-top: 30px;
+    font-size: 1.05em;
+    width: 100%;
+  }
+
+  .footer .columna3 .email-footer{
+      width: 90%;
+      height: 40px;
+      margin-top: 5px;
+      background-color: #c3c3c3;
+      font-size: 1.05em;
+      padding: 5px;
+      color: black;
+      border-radius: 10px;
+      border: 0;
+  }
+
+  .footer .columna3 .newSButom{
+      width: 100px;
+      font-size: 1.1em;
+      margin-top: 20px;
+      margin-left: 5px;
+      padding:10px 15px;
+      background-color: #fbbcac;
+      border-radius: 50px;
+      border: 0;
+  }
+
+  @media screen and (max-width: 900px){
+    main .text_main_servicio p{
+        font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 860px){
+    .contenedor_top_header{
+        flex-wrap: wrap;
+    }
+
+    .contenedor_text_header h2{
+        width: 60%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .contenedor_contactame .contenedor_redes .redes i{
+        
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+    }
+  }
+
+  @media screen and (max-width: 750px){
+
+    .contenedor_top_header .contenedor_logo{
+        height: 10vh;
+        margin: 15px;
+    }
+
+    main .contenedor_main_servicios{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    main .cuadrado_servicio{
+        width: 40%;
+    }
+
+    .contenedor_contenido_quienSoy .text_biografia p{
+        font-size: 0.9rem;
+    }
+
+    .contactame{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenedor_contactame .form_contacto{
+        width: 100%;
+        
+    }
+
+    .contenedor_contactame .o{
+        font-size: 3rem;
+        color: #f5f5f5;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor_contactame .contenedor_redes{
+        width: 100%;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .contenedor_contactame .contenedor_redes .redes i{
+        
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .content div{
+        font-size: 0.9rem;
+    }
+
+  }
+
+
+  @media screen and (max-width: 620px){
+    main .contenedor_main_servicios{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    main .cuadrado_servicio{
+        width: 70%;
+    }
+
+    .contenedor_contenido_quienSoy .contenedor_biografia,
+.contenedor_contenido_quienSoy .contenedor_trayectoria{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor_contenido_quienSoy .text_biografia{
+    margin: 15px;
+    padding: 5px;
+    width: 100%;
+}
+
+.contenedor_contenido_quienSoy .imagen_biografia,
+.contenedor_contenido_quienSoy .imagen_trayectoria{
+    
+    width: 100%;
+    height: 150px;
+    
+}
+
+.content div{
+    font-size: 0.8rem;
+}
+
+  }
+
+  @media screen and (max-width: 550px){
+    .content div .secondP{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .contenedor_top_header{
+        flex-wrap: wrap;
+    }
+
+    .contenedor_text_header h2{
+        width: 60%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+  }
+
+  
+
